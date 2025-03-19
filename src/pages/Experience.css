@@ -1,0 +1,171 @@
+.experience {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f8f9fa;
+  color: #333;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Timeline Container */
+
+.timeline {
+  position: relative;
+  width: 80%;
+  margin: 0 auto; /* Center align */
+  padding: 40px 0;
+}
+
+/* Experience Cards */
+.experience-card {
+  width: 50%; /* Ensure equal width */
+  max-width: 500px;
+  background: #fff;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(255, 152, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+/* Adjust text alignment inside cards */
+.experience-content {
+  text-align: left;
+  padding: 10px;
+}
+
+
+/* Hover Effect */
+.experience-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0px 8px 25px rgba(255, 152, 0, 0.6);
+}
+
+/* Alternating Positions */
+.experience-card.left {
+  margin-left: 0;
+  text-align: right;
+}
+
+.experience-card.right {
+  margin-left: auto;
+  text-align: left;
+}
+
+/* Timeline Vertical Line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 3px;
+  height: 100%;
+  background: #ddd;
+}
+
+/* Timeline Circle Icons */
+.timeline-icon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: 3px solid #ff9800;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff9800;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect on Icons */
+.timeline-icon:hover {
+  background: #ff9800;
+  color: white;
+  transform: scale(1.2);
+}
+
+/* Job Title */
+.job-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff9800;
+}
+
+/* Company */
+.company {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Location & Duration */
+.location, .duration {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Description */
+.description {
+  font-size: 16px;
+  color: #444;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience-card {
+    width: 90%;
+    text-align: center;
+  }
+
+  .experience-card.left, 
+  .experience-card.right {
+    margin-left: auto;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-icon {
+    left: 20px;
+  }
+}
+/* Company Logo */
+.company-logo {
+  width: 100px; /* Adjust size */
+  height: auto;
+  display: block;
+  margin: 0 auto 15px auto;
+  filter: drop-shadow(2px 2px 5px rgba(255, 152, 0, 0.5));
+}
+
+/* Hover effect for the logo */
+.company-logo:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+.experience-heading {
+  text-align: center;
+  font-size: 36px;  /* Increase Size */
+  font-weight: bold;
+  color: #ff9800; /* Make it match the theme */
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}

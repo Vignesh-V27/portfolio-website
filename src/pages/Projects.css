@@ -1,0 +1,141 @@
+/* 🎯 Projects Section - Light Theme */
+.projects {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(120deg, #ffffff, #f8f9fa);
+  min-height: 100vh;
+  color: black;
+}
+
+/* 📌 Projects Heading */
+.projects h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #ff9800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* 🔹 Projects Grid Layout - Improved Spacing */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px; /* Increased gap for better spacing */
+  justify-content: center;
+  padding: 20px;
+}
+
+/* 🛠 Project Card - Added Margin & Padding */
+.project-card {
+  background: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px; /* Added padding for better layout */
+  margin-bottom: 20px; /* Ensure spacing between cards */
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 📷 Project Image - Fixed Size & Alignment */
+.project-image {
+  width: 100%;
+  max-height: 200px; /* Reduced to maintain uniformity */
+  object-fit: contain;
+  display: block;
+  background: #eee;
+  padding: 10px; /* Ensures spacing around the image */
+}
+
+/* 📄 Project Content - Improved Layout */
+.project-content {
+  text-align: left;
+}
+
+/* 🔹 Title Alignment */
+.project-content h2 {
+  font-size: 20px;
+  color: #ff9800;
+  min-height: 60px; /* Ensures all titles align */
+  display: flex;
+  align-items: center;
+}
+
+/* 📝 Description Text */
+.project-content p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* ⭐ KPI Section */
+.project-kpi {
+  font-size: 14px;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 5px;
+}
+
+/* 🔧 Skill Tags */
+.project-skills {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+  margin-top: 8px;
+}
+
+.skill-icon {
+  font-size: 18px;
+  color: #ff9800;
+}
+
+/* 🔗 Read More Link - Fixed Position */
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 15px; /* Add space above Read More */
+  text-decoration: none;
+  font-size: 16px;
+  color: #ff9800;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.project-link svg {
+  margin-left: 5px;
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .project-image {
+    max-height: 180px;
+  }
+
+  .project-content h2 {
+    font-size: 18px;
+    min-height: 50px;
+  }
+
+  .project-content p {
+    font-size: 14px;
+  }
+}

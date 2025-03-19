@@ -1,0 +1,136 @@
+/* 📌 Home Page */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* ⬆ Move everything higher */
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  margin-top: 120px; /* ⬆ Bring entire section up */
+}
+
+/* ✅ Profile Picture - Enlarged */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 80px; /* ⬇ Slightly lower image, but less than before */
+}
+
+.profile-pic {
+  width: 250px; /* ✅ Bigger Image */
+  height: 250px;
+  border-radius: 50%;
+  border: 6px solid #ff9800;
+  box-shadow: 0px 0px 20px rgba(255, 152, 0, 0.8);
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+/* ✅ Name Section - Move Up */
+.name {
+  font-size: 36px;
+  color: #ff9800;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px; /* ⬆ Move name up */
+}
+
+/* ✅ Typewriter Effect - Move Up */
+.typewriter {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px; /* ⬆ Move closer to name */
+  text-align: center;
+}
+
+/* ✅ Quote - Move Up */
+.quote {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ddd;
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px; /* ⬆ Less spacing */
+  opacity: 0.9;
+}
+
+/* ✅ Buttons - Move Up */
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px; /* ⬆ Bring buttons up */
+}
+
+/* 📜 Resume & Contact Buttons */
+.resume-btn, .contact-btn {
+  display: inline-block;
+  padding: 14px 24px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 12px rgba(255, 152, 0, 0.4);
+  cursor: pointer;
+}
+
+/* 📜 Resume Button */
+.resume-btn {
+  background-color: #ff9800;
+}
+
+.resume-btn:hover {
+  background-color: #e68900;
+  box-shadow: 0px 7px 18px rgba(255, 152, 0, 0.7);
+}
+
+/* 📩 Contact Me Button */
+.contact-btn {
+  background-color: #ff9800;
+}
+
+.contact-btn:hover {
+  background-color: #e68900;
+  box-shadow: 0px 7px 18px rgba(255, 152, 0, 0.7);
+}
+
+/* 📱 Responsive Fix */
+@media (max-width: 768px) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .profile-container {
+    margin-top: 60px; /* ⬇ Keep image slightly lower on mobile */
+  }
+
+  .profile-pic {
+    width: 220px; /* Adjust for smaller screens */
+    height: 220px;
+  }
+
+  .name {
+    font-size: 30px;
+  }
+
+  .typewriter {
+    font-size: 18px;
+  }
+
+  .quote {
+    font-size: 16px;
+  }
+}

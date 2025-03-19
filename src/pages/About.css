@@ -1,0 +1,92 @@
+/* 🌟 General Styling */
+.about {
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+  color: black;
+  transition: all 0.3s ease-in-out;
+  padding: 60px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🏆 About Container */
+.about-container {
+  max-width: 900px;
+  text-align: center;
+}
+
+/* 📝 Section Headers */
+.about-container h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ff9800;
+  margin-bottom: 20px;
+}
+
+/* 📄 About Content */
+.about-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* 💡 Skills Section */
+.skills-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.skills-container h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* 🎯 Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* 🔥 Skill Item */
+.skill-item {
+  background: rgba(255, 152, 0, 0.1);
+  border-left: 5px solid #ff9800;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🎨 Skill Icons */
+.skill-icon {
+  font-size: 24px;
+  color: #ff9800;
+}
+
+/* ✨ Hover Effect */
+.skill-item:hover {
+  background: rgba(255, 152, 0, 0.3);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .about {
+    padding: 40px 15px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
