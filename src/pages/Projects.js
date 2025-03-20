@@ -51,7 +51,7 @@ const projects = [
     kpi: "📊 Identified revenue optimization strategies, improving sales by 25.8%",
     skills: ["Data Visualization", "Power BI", "Business Intelligence"],
     icon: "📊",
-    link: "https://your-project-link.com",
+    link: "https://github.com/Vignesh-V27/SalesDashboard",
     image: "powerbi-dashboard.jpg",
   }
 ];
