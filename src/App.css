@@ -1,6 +1,6 @@
 /* 🌌 Home Page (Dark Theme with Background Image) */
 .home-page {
-  background: url("/background.jpg") no-repeat center center fixed;
+  background: url("%PUBLIC_URL%/background.jpg") no-repeat center center fixed;
   background-size: cover;
   color: white;
   transition: all 0.3s ease-in-out;
