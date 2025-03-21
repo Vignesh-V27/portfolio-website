@@ -11,7 +11,7 @@ const projects = [
     kpi: "🏆 Runner-up in Product Management class (20 teams)",
     skills: ["Market Research", "Product Roadmap", "UX Wireframing"],
     icon: "📋",
-    link: "https://your-project-link.com",
+    link: "https://github.com/Vignesh-V27/Uniplay",
     image: "uniplay.jpg",
   },
   {
@@ -21,7 +21,7 @@ const projects = [
     kpi: "📊 Increased customer satisfaction by 58.7% through seamless checkout",
     skills: ["Product Strategy", "Automation", "Data Analytics"],
     icon: "🛒",
-    link: "https://your-project-link.com",
+    link: "https://github.com/Vignesh-V27/Smart-Basket-Billing-System",
     image: "smart-basket.jpg",
   },
   {
@@ -31,7 +31,7 @@ const projects = [
     kpi: "🤖 Predicted to improve user efficiency by 42.3% through AI automation",
     skills: ["AI Integration", "Workflow Automation", "Business Analysis"],
     icon: "🔧",
-    link: "https://your-project-link.com",
+    link: "https://github.com/Vignesh-V27/WhatsApp-Productivity-Tool",
     image: "whatsapp-tool.jpg",
   },
   {
@@ -41,7 +41,7 @@ const projects = [
     kpi: "📈 Improved prediction accuracy by 19.4% through data-driven modeling",
     skills: ["Probability and Statistics", "Visualization", "Statistical Modeling"],
     icon: "🏠",
-    link: "https://your-project-link.com",
+    link: "https://github.com/Vignesh-V27/House-Price-Prediction-Statistical-Modeling-",
     image: "house-price.jpg",
   },
   {
